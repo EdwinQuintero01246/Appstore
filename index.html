@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Amazon Appstore</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/all.css"><!--FontAwesome-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.png" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <img src="img/logo.png" alt="">
+            </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-warning my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+        </nav>
+        <section id="sectionEliminar">
+            
+        </section>
+        <section role="main" >
+            <div class="container-fluid" id="mainConfig" >
+                <div class="row" id="rowConfi">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-12 " >
+                        <ul class="UlConfModal" style="padding: 0px;">
+                            <li>
+                                <select class="select-css" id="select-css" onclick="cargarAplicaciones()">
+                                    <option value="0" >Categorias</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="DivEliminar">
+                    <h1>metodo de eliminacion</h1>
+                    <div class="" style="display: flex;">
+                        <select class="select-css col-sm-2" id="categoria">
+                        </select>
+                        <select class="select-css col-sm-2" id="aplicacion">
+                        </select>
+                        <input type="button" class="btn btn-secondary" style="display: block" onclick="enviarInfoBorra()"  value="enviar">
+                    </div>
+                </div>
+                <!--div>
+                    nota: funciona hasta la validación si esta intalada o no en el modal.
+                </div-->
+                <div class="row" id="rowConfi1" >
+                    
+                </div>
+            </div>
+        </section><!-- /.container -->
+        <section>
+            <h6 style="text-align: end; padding-right: 15px;">Lo hermoso de la programación: Edwin Quintero</h6>
+        </section>    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador.js"></script>
+</body>
+</html>
+<div id="GenerarModal">
+</div>
